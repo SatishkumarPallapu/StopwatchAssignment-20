@@ -5,7 +5,6 @@ import './index.css'
 
 class Stopwatch extends Component {
   state = {
-    hours: 0,
     minutes: 0,
     seconds: 0,
   }
@@ -27,15 +26,11 @@ class Stopwatch extends Component {
   }
 
   onClickStop = () => {
-    const {minutes, seconds} = this.state
     clearInterval(this.timerId)
-    console.log('stop clicked')
   }
 
   onClickReset = () => {
-    const {minutes} = this.state
     this.setState({minutes: 0, seconds: 0})
-    console.log(minutes)
   }
 
   getTheTime = value =>
@@ -43,7 +38,6 @@ class Stopwatch extends Component {
 
   render() {
     const {seconds, minutes} = this.state
-    console.log(minutes, seconds)
 
     return (
       <div className="main-container">
