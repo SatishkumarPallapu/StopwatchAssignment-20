@@ -1,0 +1,120 @@
+/* Write CSS here */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  margin: 10px;
+  padding-left: 50px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.header {
+  font-size: 35px;
+  padding-left: auto;
+  min-width: 500px;
+  text-align: center;
+  min-height: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.stopwatch-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  padding: 25px;
+  min-width: 500px;
+  min-height: 300px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 5px 10px 10px 10px rgb(153, 150, 150);
+}
+.stopwatch-timer-header {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 20px;
+  text-align: center;
+}
+
+img {
+  width: 45px;
+  height: 50px;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.timer {
+  font-size: 26px;
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 50px;
+}
+.colon {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.timer-container {
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 130px;
+  height: 38px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+}
+
+.start {
+  background-color: #1db05f;
+  font-size: 20px;
+  font-weight: 500;
+}
+.stop {
+  background-color: #ef0d36;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.reset {
+  background-color: #eaa800;
+  font-size: 20px;
+  font-weight: 500;
+}
